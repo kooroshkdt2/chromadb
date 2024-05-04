@@ -1,4 +1,4 @@
-From chromadb/chroma
+FROM docker.io/chromadb/chroma:latest
 RUN chmod -R 777 /chroma  &&
     chown -R 1001:0 /chroma  && 
     chmod 777 /docker_entrypoint.sh  &&
